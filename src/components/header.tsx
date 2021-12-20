@@ -6,7 +6,7 @@ import LogoSmall from '../assets/ETLogo_WhiteInline.svg'
 export const Header = () => {
   return <div className='header'>
     <div className='header__inner'>
-      <img className="header__inner__logo" src={LogoSmall} alt="Eternal Now" />
+      <Link to='/'><img className="header__inner__logo" src={LogoSmall} alt="Eternal Now" /></Link>
       <div className="header__inner__nav">
         <Navbar />
       </div>
