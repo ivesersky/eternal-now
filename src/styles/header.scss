@@ -1,0 +1,18 @@
+.header {
+    &__inner {
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(12, [col] 1fr);
+        &__logo {
+            width: 80%;
+            max-width: 220px;
+            grid-column: 1 / 4;
+        }
+        &__nav {
+            grid-column: 7 / 12;
+        }
+    }
+}

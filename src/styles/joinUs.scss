@@ -1,0 +1,47 @@
+.join-us__content {
+    padding: 2rem 1.5rem;
+    display: grid;
+    height: 100vh;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-template-columns: repeat(12, [col] 1fr);
+    &__image {
+        grid-column: 1 / 7;
+        width: 100%;
+        background-image: url(../assets/join-us.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 320px;
+    }
+    &__text {
+        grid-column: 7 / 11;
+    }
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.banner {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    &__word {
+        position: absolute;
+        right: 0;
+        animation: banner 15s infinite linear;
+    }
+}
+
+@keyframes banner {
+    0% { 
+        right: 70%;
+    }
+    50% {
+        right: 0;
+    }
+    100% { 
+        right: 70%;
+    }
+  }

@@ -1,0 +1,11 @@
+.events {
+    &__inner {
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+        &__grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 2em;
+        }
+    }
+}
