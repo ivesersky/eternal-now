@@ -1,0 +1,33 @@
+body {
+    background-color: #000;
+    font-size: 16px;
+}
+
+.home__inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    &__bottom {
+        display: flex;
+        color: #FFF;
+        &__text {
+            width: 100%;
+            max-width: 230px;
+            margin-left: 300px;
+        }
+    }
+    &__top {
+        &__logo {
+            width: 100%;
+            max-width: 550px;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .home__inner__bottom__text {
+        display: none;
+    }
+}

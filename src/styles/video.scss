@@ -1,0 +1,13 @@
+.video__container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+}

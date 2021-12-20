@@ -1,0 +1,12 @@
+.event {
+    &__inner {
+        width: 100%;
+        &__picture {
+            height: 350px;
+            background-image: url(../assets/event3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
