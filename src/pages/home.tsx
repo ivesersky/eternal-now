@@ -11,8 +11,9 @@ import { About } from './about';
 import { JoinUs } from './joinUs';
 import { HashLink as Link } from 'react-router-hash-link';
 
-export const Home = (props: any) =>{
 
+export const Home = (props: any) =>{
+  window.scrollTo(0,0);
   const topEvents = EventsList.filter((e) => e.category === 'topEvent')
 
   return <div>

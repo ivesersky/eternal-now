@@ -6,6 +6,8 @@ import { FuzzyTrail } from '../components/fuzzy-trail';
 import Love from '../assets/love.svg'
 
 export const JoinUs = ({ isHome }: { isHome?:boolean }) => {
+window.scrollTo(0,0);
+
   return <div className={"join-us" + (isHome ? ' join-us--isHome' : ' join-us--notHome')}>
     {!isHome
       ? 

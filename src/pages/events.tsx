@@ -6,6 +6,8 @@ import { EventsList } from '../mocks/EventsList';
 import { FuzzyTrail } from '../components/fuzzy-trail';
 
 export const Events = (props: any) =>{
+window.scrollTo(0,0);
+
   return <div className="events">
     <div className="events__inner">
       <Header/>

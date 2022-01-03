@@ -7,6 +7,8 @@ import '../styles/about.scss';
 
 
 export const About = ({ isHome }: { isHome?:boolean }) => {
+window.scrollTo(0,0);
+
   return <div className={"about" + (isHome ? ' about--isHome' : ' about--notHome')}>
     {!isHome
       ?  <Header />
