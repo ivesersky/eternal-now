@@ -1,7 +1,10 @@
 import '../styles/video.scss';
+import Vid from '../assets/vid.mp4';
 
 export const Video = () => {
   return <div className='video__container'>
-    <video src="../assets/vid.mp4" autoPlay={true} controls={false}></video>
+    <video autoPlay controls={false} muted loop>
+      <source src={Vid} type='video/mp4'/>
+    </video>
   </div>
 }

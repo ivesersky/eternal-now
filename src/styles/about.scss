@@ -1,58 +1,149 @@
 .about {
-    font-size: 14px;
+    position: relative;
+    &--isHome {
+        .about__content__bottom__text__left__text1,
+        .about__content__bottom__text__right,
+        .about__content__bottom__image,
+        .about__content__top__text__left__text2,
+        .about__content__top__text__left__text3 {
+            display: none;
+        }
+    }
+    &--notHome {
+        @media only screen and (max-width: 1000px) {
+            .about__content__top__text__right__text2 {
+                grid-row: 4;
+                grid-column: 1 / 7;
+            }
+            .about__content__bottom__image {
+                grid-row: 5;
+            } 
+        }
+
+    }
     &__content {
         padding: 2rem 1.5rem;
         display: grid;
-        height: 100vh;
+        min-height: 100vh;
         grid-column-gap: 2em;
         grid-row-gap: 2em;
-        grid-template-columns: repeat(12, [col] 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        box-sizing: border-box;
+        @media only screen and (max-width: 1000px) {
+            grid-row-gap: 12px;
+            grid-column-gap: 1rem;
+            grid-template-columns: repeat(12, 1fr);
+        }
         &__top {
             grid-row: 1;
             grid-column: 1 / 13;
+            @media only screen and (max-width: 1000px) {
+                grid-row: auto;
+            }
             &__image {
                 grid-column: 1 / 7;
                 width: 100%;
+                min-height: 320px;
                 background-image: url(../assets/about1.jpg);
                 background-size: cover;
                 background-position: center;
+                @media only screen and (max-width: 1000px) {
+                    grid-column: 1 /13;
+                    grid-row: 1;
+                }
             }
             &__text {
                 display: contents;
-                grid-column: 7 / 13;
+                grid-column: 8 / 13;
+                @media only screen and (max-width: 1000px) {
+                    grid-column: unset;
+                }
                 &__left {
                     grid-column: 7 / 10;
+                    @media only screen and (max-width: 1000px) {
+                        grid-column: 1 /13;
+                        grid-row: 2;
+                    }
                 }
                 &__right {
                     grid-column: 11 / 13;
+                    &__text3 {
+                        display: none;
+                    }
+                    @media only screen and (max-width: 1000px) {
+                        display: contents;
+                        &__text1 {
+                            grid-column: 1 /7;
+                        }
+                        &__text2 {
+                            grid-column: 7 /13;
+                        }
+                        &__text1, &__text2 {
+                            grid-row: 3;
+                        }
+                        &__text3 {
+                            display: inline;
+                            grid-row: 4;
+                            grid-column: 1 /13;
+                            font-weight: 100;
+                        }
+                    }
                 }
                 
             }
         }
         &__bottom {
-            grid-row: 2;
+            grid-row: 3;
             grid-column: 1 / 13;
             &__image {
                 grid-column: 7 / 13;
                 width: 100%;
+                min-height: 320px;
                 background-image: url(../assets/about2.jpg);
                 background-size: cover;
                 background-position: center;
+                @media only screen and (max-width: 1000px) {
+                    grid-column: 1 /13;
+                    grid-row: 4;
+                }
             }
             &__text {
                 grid-column: 1 / 7;
                 display: contents;
                 &__left {
                     grid-column: 1 / 4;
+                    @media only screen and (max-width: 1000px) {
+                        grid-column: 1 /13;
+                    }
+                    &__text1 {
+                        @media only screen and (max-width: 1000px) {
+                            grid-column: 1 /13;
+                            grid-row: 5;
+                        }
+                    }
+                    &__text2, &__text3 {
+                        font-weight: 100;
+                        @media only screen and (max-width: 1000px) {
+                            display: none;
+                        }
+                    }
+                    
                 }
                 &__right {
                     grid-column: 5 / 7;
+                    @media only screen and (max-width: 1000px) {
+                        grid-row: 3;
+                        grid-column: 7 / 13;            
+                    }
                 }
+            }
+            &__button {
+                grid-column: 1 / 7;
+                text-transform: uppercase;
             }
         }
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
     }
 

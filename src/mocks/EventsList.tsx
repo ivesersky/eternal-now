@@ -2,28 +2,36 @@ export const EventsList = [
   {
     category: 'topEvent',
     eventId: 1,
+    cat: 'Talk',
     name: 'Rafael Lozano-Hemmer',
     date: 'Thursday Nov 12 2021 6 PM',
-    link: 'More Info / Get Tickets'
+    link: 'More Info / Get Tickets',
+    photo: '/static/src/assets/event1.jpg',
   },
   {
     category: 'topEvent',
     eventId: 2,
-    name: 'Rafael Lozano-Hemmer',
+    cat: 'Film Screening',
+    name: 'Minari',
     date: 'Thursday Nov 12 2021 6 PM',
-    link: 'More Info / Get Tickets'
+    link: 'More Info / Get Tickets',
+    photo: '../assets/event1.jpg',
   },
   {
     category: 'topEvent',
     eventId: 3,
+    cat: 'Show Opening',
     name: 'Rafael Lozano-Hemmer',
     date: 'Thursday Nov 12 2021 6 PM',
-    link: 'More Info / Get Tickets'
+    link: 'More Info / Get Tickets',
+    photo: '../assets/event1.jpg',
   },
   {
     eventId: 4,
+    cat: 'Workshop',
     name: 'Rafael Lozano-Hemmer',
     date: 'Thursday Nov 12 2021 6 PM',
-    link: 'More Info / Get Tickets'
+    link: 'More Info / Get Tickets',
+    photo: '../assets/event1.jpg',
   },
 ]

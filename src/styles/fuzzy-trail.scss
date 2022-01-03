@@ -1,4 +1,13 @@
 .fuzzy-trail {
-    background-color: var(--canvas-background-color);
+    background-color: black;
     filter: blur(50px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    @media only screen and (max-width: 1000px) {
+        display: none;
+    }
 }

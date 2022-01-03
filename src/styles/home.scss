@@ -2,20 +2,51 @@ body {
     background-color: #000;
     font-size: 16px;
 }
+.home__title {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+.home__long {
+    display: none;
+    @media only screen and (max-width: 1000px) {
+        display: block;
+    }
+}
+.home__trail {
+    position: fixed;
+}
+.home__events {
+    padding: 2rem 1.5rem;
 
+}
 .home__inner {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem 1.5rem;
+    position: relative;
+    &__video {
+        position: absolute;
+        min-width: 100vw;
+        left: 0;
+        top: 0;
+        min-height: 100vh;
+        z-index: -1;
+    }
     &__bottom {
         display: flex;
         color: #FFF;
         &__text {
             width: 100%;
-            max-width: 230px;
-            margin-left: 300px;
+            max-width: 220px;
+            margin-left: 400px;
+            font-size: 0.875rem;
+            line-height: 1rem;
+            &__bottom {
+                font-weight: 100;
+                margin-top: 0.5rem;
+            }
         }
     }
     &__top {
