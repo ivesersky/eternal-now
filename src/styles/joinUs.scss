@@ -1,5 +1,8 @@
 .join-us {
     position: relative;
+    &--notHome {
+        padding-top: 100px;
+    }
 }
 .join-us__content {
     padding: 2rem 1.5rem;

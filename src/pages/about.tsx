@@ -1,7 +1,8 @@
 import { FuzzyTrail } from '../components/fuzzy-trail';
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
-import { HashLink as Link } from 'react-router-hash-link';  
+import { HashLink as Link } from 'react-router-hash-link';
+import Smile from '../assets/smile.svg'
 import '../styles/about.scss';
 
 
@@ -20,7 +21,7 @@ export const About = ({ isHome }: { isHome?:boolean }) => {
             <p className="about__content__top__text__left__text3">The shop is open to the public during “regular” business hours. To join us for events and get news and other dispatches from the shop, become a MEMBER.</p>
           </div>
           <div className="about__content__top__text__right">
-            <p className="about__content__top__text__right__text1">Sat 12PM – 7PM<br/>Sun 12PM – 7PM<br/>☺ WE’LL SEE ☺</p>
+            <p className="about__content__top__text__right__text1">Sat 12PM – 7PM<br/>Sun 12PM – 7PM<br/><img src={Smile} alt=":)" /> WE’LL SEE <img src={Smile} alt=":)" /></p>
             <p className="about__content__top__text__right__text2">2419 San Pablo Avenue<br/>Oakland, CA 94612</p>
             {isHome
               ?  <p className="about__content__top__text__right__text3">Video excerpt from SOFT NESS by LANEYA BILLENGSLEY</p>

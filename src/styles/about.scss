@@ -1,4 +1,7 @@
 .about {
+    &--notHome {
+        padding-top: 100px;
+    }
     position: relative;
     &--isHome {
         .about__content__bottom__text__left__text1,
@@ -147,4 +150,12 @@
         }
     }
 
+}
+.smile {
+    display: none;
+}
+#smile {
+    content: '\25B8';
+    display: inline;
+    text-decoration: none;
 }

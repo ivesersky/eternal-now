@@ -3,7 +3,7 @@ import Vid from '../assets/vid.mp4';
 
 export const Video = () => {
   return <div className='video__container'>
-    <video autoPlay controls={false} muted loop>
+    <video autoPlay controls={false} muted loop playsInline>
       <source src={Vid} type='video/mp4'/>
     </video>
   </div>
