@@ -5,7 +5,7 @@ import p5Types from "p5";
 export const FuzzyTrailAlt = () => {
   
 //Variables
-let size = 200;
+let size = 350;
 
 
 //Setup

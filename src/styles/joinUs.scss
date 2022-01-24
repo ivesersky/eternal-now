@@ -44,14 +44,33 @@
     width: 100%;
     position: relative;
     display: flex;
+    font-weight: bold;
     &__word {
         position: absolute;
-        right: 0;
-        animation: banner 15s infinite linear;
+        &--2 {
+            left: 0;
+            animation: banner1 15s infinite linear;
+        }
+        &--1 {
+            right: 0;
+            animation: banner2 15s infinite linear;
+        }
     }
 }
 
-@keyframes banner {
+@keyframes banner1 {
+    0% { 
+        left: 70%;
+    }
+    50% {
+        left: 0;
+    }
+    100% { 
+        left: 70%;
+    }
+  }
+
+  @keyframes banner2 {
     0% { 
         right: 70%;
     }

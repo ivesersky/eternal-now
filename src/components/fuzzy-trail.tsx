@@ -1,13 +1,11 @@
 import '../styles/fuzzy-trail.scss';
 import Sketch from "react-p5";
-import p5Dom from "react-p5";
 import * as p5Types from "p5";
 
 export const FuzzyTrail = () => {
-  
-//Variables
-let size = 100;
-
+  //Variables
+let size = 175;
+let time = 0;
 
 //Setup
 const setup = (p5: p5Types, canvasParentRef: Element) => {
@@ -15,16 +13,17 @@ const setup = (p5: p5Types, canvasParentRef: Element) => {
   
 };
 
+let easing = function (t: any) { return t*t*t }
+
 const draw = (p5: p5Types) => {
-  p5.noStroke()
-};
+  time = time + 0.005
+  let alpha = 255 - 255 * easing(time)
 
-const mouseMoved = (p5: p5Types) => {
+  p5.fill(99,55,224, alpha)
+  p5.noStroke()
   p5.circle(p5.mouseX - size/2, p5.mouseY - size/2, size)
-  p5.noStroke()
-  p5.fill("#6337E0")
-   // @ts-ignore
 };
 
-return <Sketch setup={setup} mouseMoved={mouseMoved} draw={draw} className="fuzzy-trail" />;
+
+return <Sketch setup={setup} draw={draw} className="fuzzy-trail" />;
 }

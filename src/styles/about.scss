@@ -124,6 +124,10 @@
                             grid-row: 5;
                         }
                     }
+                    &__text2 {
+                        font-size: 0.85rem;
+                        line-height: 1.25rem;
+                    }
                     &__text2, &__text3 {
                         font-weight: 100;
                         @media only screen and (max-width: 1000px) {
@@ -137,6 +141,10 @@
                     @media only screen and (max-width: 1000px) {
                         grid-row: 3;
                         grid-column: 7 / 13;            
+                    }
+                    &__item {
+                        display: block;
+                        margin-bottom: 1.5rem;
                     }
                 }
             }
